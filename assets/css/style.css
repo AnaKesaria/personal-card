@@ -71,8 +71,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-
+} 
 .profile-info h1 {
   font-family: 'DancingScript', cursive;
   font-weight: 700;
@@ -87,15 +86,21 @@ body {
   line-height: 1.6;
   margin-bottom: 15px;
 }
-
-.links {
-  margin-bottom: 20px;
+ .links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
   display: flex;
   gap: 15px;
   flex-wrap: wrap;
 }
 
-.links a {
+.links li {
+  margin: 0;
+  padding: 0;
+}
+
+.links li a {
   text-decoration: none;
   color: #0066cc;
   font-weight: 700;
@@ -103,13 +108,15 @@ body {
   border: 1px solid #0066cc;
   border-radius: 5px;
   transition: background-color 0.3s ease, color 0.3s ease;
+  display: inline-block;
 }
 
-.links a:hover {
+.links li a:hover {
   background-color: #0066cc;
   color: #fff;
   text-decoration: none;
 }
+
 
 .contact-btn {
   background-color: #42b883;
@@ -121,10 +128,10 @@ body {
   font-size: 1.1rem;
   transition: background-color 0.3s ease, transform 0.2s ease;
   align-self: flex-start;
+  margin-top:10px;
 }
 
 .contact-btn:hover {
   background-color: #369b6f;
   transform: translateY(-2px);
 }
-

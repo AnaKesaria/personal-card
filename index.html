@@ -1,33 +1,45 @@
 <!DOCTYPE html>
-<html lang="ka">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Personal card</title>
+  <title>Personal Card</title>
   <link rel="stylesheet" href="assets/css/reset.css">
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
 
-  <div class="container">
-    <div class="card" id="profile-card">
-      <div class="profile-image">
+  <main class="container">
+    <article class="card" id="profile-card">
+      
+      <figure class="profile-image">
         <img src="assets/images/myphoto.jfif" alt="My Profile Photo">
-      </div>
-      <div class="profile-info">
-        <h1>Ana Kesaria</h1>
+      </figure>
+      
+      <section class="profile-info">
+        <header>
+          <h1>Ana Kesaria</h1>
+        </header>
+        
         <p class="bio">
-          I'm Ana Kesaria, a motivated student at ISET with GPA 4.00.I love technologies .
+          I'm Ana Kesaria, a motivated student at ISET with GPA 4.00. I love technologies.
         </p>
-        <div class="links">
-          <a href="mailto:anakesaria.mamaladze@iset.ge" target="_blank">Email</a>
-          <a href="https://github.com/AnaKesaria" target="_blank">GitHub</a>
-          <a href="https://ge.linkedin.com/in/anakesariamamaladze" target="_blank">LinkedIn</a>
-        </div>
-        <button class="contact-btn">Contact me </button>
-      </div>
-    </div>
-  </div>
+        
+        <nav class="links">
+          <ul>
+            <li><a href="mailto:anakesaria.mamaladze@iset.ge" target="_blank">Email</a></li>
+            <li><a href="https://github.com/AnaKesaria" target="_blank">GitHub</a></li>
+            <li><a href="https://ge.linkedin.com/in/anakesariamamaladze" target="_blank">LinkedIn</a></li>
+          </ul>
+        </nav>
+        
+        <footer>
+          <button class="contact-btn">Contact me</button>
+        </footer>
+      </section>
+
+    </article>
+  </main>
 
 </body>
 </html>
